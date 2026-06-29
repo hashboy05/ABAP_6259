@@ -53,7 +53,7 @@ CLASS ZCL_6259_BRANCH IMPLEMENTATION.
             TRY.
                 result = number1 / number2.
                CATCH cx_sy_zerodivide.
-                output = |Division by zero is not defined|.
+                output = 'Division by zero is not defined'(001).
             ENDTRY.
         WHEN OTHERS.
             output = |'{ op }' is not a valid operator!|.

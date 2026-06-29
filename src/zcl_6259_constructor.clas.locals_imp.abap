@@ -31,8 +31,8 @@ CLASS lcl_connection IMPLEMENTATION.
   METHOD get_output.
 
     APPEND |------------------------------| TO r_output.
-    APPEND |Carrier:     { carrier_id    }| TO r_output.
-    APPEND |Connection:  { connection_id }| TO r_output.
+    APPEND 'Carrier:     { carrier_id    }'(001) TO r_output.
+    APPEND 'Connection:  { connection_id }'(002) TO r_output.
 
 
   ENDMETHOD.
