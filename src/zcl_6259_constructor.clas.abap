@@ -37,7 +37,7 @@ CLASS ZCL_6259_CONSTRUCTOR IMPLEMENTATION.
         APPEND connection TO connections.
 
       CATCH cx_abap_invalid_value.
-        out->write( `Method call failed` ).
+        out->write( 'Method call failed'(003) ).
     ENDTRY.
 
 * Second instance
@@ -52,7 +52,7 @@ CLASS ZCL_6259_CONSTRUCTOR IMPLEMENTATION.
         APPEND connection TO connections.
 
       CATCH cx_abap_invalid_value.
-        out->write( `Method call failed` ).
+        out->write( text-003 ).
     ENDTRY.
 
 * Third instance
@@ -67,7 +67,7 @@ CLASS ZCL_6259_CONSTRUCTOR IMPLEMENTATION.
         APPEND connection TO connections.
 
       CATCH cx_abap_invalid_value.
-        out->write( `Method call failed` ).
+        out->write( text-003 ).
     ENDTRY.
 
 

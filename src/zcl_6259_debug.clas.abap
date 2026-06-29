@@ -61,7 +61,7 @@ CLASS ZCL_6259_DEBUG IMPLEMENTATION.
         months_btw_spec_pay = 3.
         special_repayment   = spec_repay_year / 4.
       WHEN OTHERS.
-        out->write( 'Invalid extra payment mode'  ).
+        out->write( 'Invalid extra payment mode'(001)  ).
         EXIT.
     ENDCASE.
 

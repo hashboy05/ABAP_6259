@@ -24,6 +24,12 @@
      <ENTRY>Connection:  { connection_id }</ENTRY>
      <LENGTH>60</LENGTH>
     </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Method call failed</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
    </TPOOL>
   </asx:values>
  </asx:abap>

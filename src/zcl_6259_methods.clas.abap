@@ -35,7 +35,7 @@ CLASS ZCL_6259_METHODS IMPLEMENTATION.
 *        connection->connection_id = '0400'.
         APPEND connection TO connections.
       CATCH cx_abap_invalid_value.
-        out->write( `Method call failed` ).
+        out->write( 'Method call failed'(001) ).
     ENDTRY.
 
 * Second Instance
@@ -52,7 +52,7 @@ CLASS ZCL_6259_METHODS IMPLEMENTATION.
 *        connection->connection_id = '0017'.
         APPEND connection TO connections.
       CATCH cx_abap_invalid_value.
-        out->write( `Method call failed` ).
+        out->write( text-001 ).
     ENDTRY.
 
 * Third Instance
@@ -69,7 +69,7 @@ CLASS ZCL_6259_METHODS IMPLEMENTATION.
 *        connection->connection_id = '0001'.
         APPEND connection TO connections.
       CATCH cx_abap_invalid_value.
-        out->write( `Method call failed` ).
+        out->write( text-001 ).
     ENDTRY.
 
 * Output
